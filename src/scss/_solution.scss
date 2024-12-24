@@ -1,0 +1,107 @@
+@import "mixin";
+.solution-section {
+    background: url("../images/design/solution-background.png");
+    background-size: cover;
+    background-position: center;
+    // background-position: center;
+    width: 100%;
+    padding: 20px 0px;
+    @media(min-width: 768px)
+    {
+        padding: 40px 0px;
+    }
+    @media(min-width: 1024px)
+    {
+        padding: 50px 0px;
+    }
+    @media(min-width: 1600x)
+    {
+        padding: 70px 0px;
+    }
+    @media(min-width: 1920px)
+    {
+        padding: 98px 0px;
+    }
+}
+.solution-image {
+    width: 200px;
+    img{
+        width: inherit;
+    }
+    @media(min-width: 768px)
+    {
+        width: 300px;
+    }
+    @media(min-width: 1024px)
+    {
+        width: 350px;
+    }
+    @media(min-width: 1440px)
+    {
+        width: 470px;
+    }
+    @media(min-width: 1600px)
+    {
+        width: 550px;
+    }
+    @media(min-width: 1920px)
+    {
+        width: 605px;
+    }
+}
+
+.solution-text-button-container {
+    gap: 8px;
+    @media(min-width:1440px)
+    {
+        width: 45%;
+        gap: 12px;
+    }
+    @media(min-width: 1920px)
+    {
+        width: 35%;
+        gap: 27px;
+    }
+}
+// .solution-text {
+//     @media(min-width: 768px)
+//     {
+
+//         width: 90%;
+//     }
+// }
+
+.solution-text-heading {
+    @include section-heading;
+    text-align: center;
+    @media(min-width: 768px)
+    {
+        text-align: left;
+        width: 90%;
+    }
+}
+.solution-text-description {
+    font-size: 16px;
+    color: $description-color;
+    @media(min-width: 768px)
+    {
+        font-size: 17px;
+        line-height: 27px;
+        width: 90%;
+    }
+}
+.solution-button {
+    @include yellow-button(7px, 15px);
+  
+    @media (min-width: 1024px) {
+      @include yellow-button(10px, 20px);
+    }
+  
+    @media (min-width: 1440px) {
+      @include yellow-button(15px, 30px);
+    }
+  
+    @media (min-width: 1920px) {
+      @include yellow-button(20px, 40px);
+    }
+}

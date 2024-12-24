@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  max-width: 1920px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", serif;
+}
+
+$heading-color: #212528;
+$description-color: #828282;
+$blue-violet-color:#6F77F1;
+
+@import "mixin";
+@import "./_nav";
+@import "./_hero";
+@import "./management";
+@import "./optimise";
+@import "./solution";
+@import "./grow";
+@import "./choose";
+@import "./need";
+@import "./speed";
+@import "./plan";
+@import "./member";
+@import "./number";
+.section-wrapper {
+  @media(min-width: 1600px)
+  {
+
+    margin: 130px 0px;
+  }
+}
+.title-color {
+  color: $heading-color;
+}
+.description-color {
+  color: #828282;
+}
+.purple-color {
+  color: $blue-violet-color;
+}

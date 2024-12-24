@@ -1,0 +1,128 @@
+@import "mixin";
+
+.plan-section {
+  background-color: #fafafa;
+  @media (min-width: 1024px) {
+    padding: 3px 0px;
+  }
+  @media (min-width: 1440px) {
+    padding: 5px 0px;
+  }
+  @media (min-width: 1920px) {
+    padding: 10px 0px;
+  }
+}
+.plan-container {
+  gap: 15px;
+  @media (min-width: 768px) {
+    gap: 20px;
+  }
+  @media (min-width: 1024px) {
+    gap: 30px;
+  }
+  @media (min-width: 1440px) {
+    gap: 40px;
+  }
+  @media (min-width: 1600px) {
+    gap: 45px;
+  }
+  @media (min-width: 1920px) {
+    gap: 50px;
+  }
+}
+.plan-heading {
+  @include section-heading;
+}
+
+.plan-text {
+  font-size: 17px;
+}
+
+.plan-number {
+  font-size: 30px;
+  font-weight: 500;
+
+  @media (min-width: 1024px) {
+    font-size: 40px;
+  }
+
+  @media (min-width: 1600px) {
+    font-size: 45px;
+  }
+
+  @media (min-width: 1920px) {
+    font-size: 49px;
+  }
+}
+
+.plan-card {
+  gap: 20px;
+  padding: 60px 30px;
+  transition: transform 0.6s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    // background: url(../images/design/card-hover.png);
+    background-image: url(../images/design/card-hover.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    transform: scaleX(1);
+
+
+    .card-title {
+      color: white;
+    }
+
+    .card-text {
+      color: white;
+    }
+
+    .plan-card-button {
+      background-color: #fad725;
+      border: none;
+    }
+    transform: scaleY(1.05);
+    @media(min-width: 1920px)
+    {
+      transform: scaleY(1.1);
+    }
+  }
+  @media (min-width: 1440px) {
+    gap: 25px 40px;
+  }
+
+  @media (min-width: 1600px) {
+    gap: 35px 50px;
+  }
+
+  @media (min-width: 1920px) {
+    gap: 47px;
+    padding: 40px 61px;
+  }
+}
+
+.plan-card-container {
+  gap: 20px;
+
+  @media (min-width: 1600px) {
+    gap: 25px;
+  }
+}
+
+.plan-card-description {
+  font-size: 17px;
+  line-height: 30px;
+
+  @media (min-width: 1440px) {
+    line-height: 35px;
+  }
+}
+
+.plan-card-button {
+  background-color: white;
+  border-radius: 2px;
+  border: 2px solid #212528;
+  margin: 15px;
+  font-size: 14px;
+}

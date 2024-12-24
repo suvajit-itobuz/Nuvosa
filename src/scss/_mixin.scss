@@ -1,0 +1,63 @@
+// mixin property
+@mixin yellow-button($paddingy, $paddingx) {
+  background-color: #fad725;
+  color: #212528;
+  font-size: 18px;
+  border-radius: 4px;
+  border: none;
+  padding: $paddingy $paddingx;
+  font-weight: 500;
+
+  @media (min-width: 1024px) {
+    font-size: 20px;
+  }
+
+  @media (min-width: 1600px) {
+    font-size: 24px;
+  }
+
+  &:hover {
+    background-color: #ffe45d;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+@mixin hover-scale() {
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 0.3s ease-in-out;
+}
+@mixin section-heading {
+  font-size: 23px;
+  color: #212528;
+  font-weight: 500;
+  span {
+    color: #6F77F1;
+  }
+  @media(min-width: 768px)
+  {
+    font-size: 40px;
+  }
+  @media(min-width: 1024px)
+  {
+    font-size: 45px;
+  }
+  @media(min-width: 1440px)
+  {
+    font-size: 50px;
+  }
+  @media(min-width: 1600px)
+  {
+    font-size: 55px;
+  }
+}
+@mixin card-heading {
+  @media(min-width: 1024px)
+  {
+      font-size: 22px;
+  }
+  @media(min-width: 1600px)
+  {
+      font-size: 24px;
+  }
+}
