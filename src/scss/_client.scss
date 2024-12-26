@@ -1,0 +1,52 @@
+@import "mixin";
+
+.client-text-heading {
+    @include section-heading;
+
+}
+.client-text-description {
+    font-size: 17px;
+}
+.client-card{
+    padding: 15px;
+    border-radius: 0px;
+
+}
+.client-card-name {
+    color: $heading-color;
+    font-weight: 500;
+    font-size: 16px;
+}
+.client-card-role {
+    color: $description-color;
+    font-size: 16px;
+}
+.client-card-description {
+    font-size: 17px;
+    color: $description-color;
+}
+
+
+.carousel-indicators {
+    position: static;
+    margin-top: 1rem;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #E9E9E9;
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    
+
+}
+.carousel-button{
+    width: 14px;
+    border-radius: 50%;
+}
+
+.carousel-indicators .active {
+    background-color: #6F77F1;
+transform: scale(2);
+    transition: all 0.2s ease-in-out;
+}

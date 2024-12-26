@@ -28,7 +28,7 @@
 
 .member-card {
     cursor: pointer;
-    transition: all 1s ease-in-out;
+    transition: all 0.3s ease-in-out;
     gap: 20px;
     padding: 20px 10px;
 
@@ -41,17 +41,20 @@
     }
 
     @media (min-width: 1920px) {
-        padding: 46px 37px;
+        padding:41px 51px;
     }
 
     &:hover {
-        box-shadow: 0px 34px 50px -17px #021605;
+        box-shadow: 0px 24px 50px -40px #021605;
 
         color: #6F77F1;
     }
 
     a>img:hover {
         fill: $blue-violet-color;
+    }
+    .card-link{
+        text-decoration: none;
     }
 
 
@@ -81,16 +84,15 @@
     }
     
 }
-.member-card-body img:hover {
-    transform: scale(1.2);
-    // filter: var(#6F77F1);
-
-    // filter: invert(20%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
-    fill: blue;
-
-
+.member-card-body svg {
+    fill:#828282;
 }
-
+.member-card-body svg:hover {
+    
+    transform: scale(1.2);
+    fill: #6F77F1; 
+    
+}
 .member-text-description {
     @media (min-width: 768px) {
         width: 80%;
