@@ -1,134 +1,141 @@
 @import "mixin";
+
 .need-container {
   gap: 15px;
-  @media(min-width: 1024px)
-  {
+
+  @media (min-width: 1024px) {
     gap: 30px;
   }
-  @media(min-width: 1440px)
-  {
+
+  @media (min-width: 1440px) {
     gap: 50px;
   }
-  @media(min-width: 1600px)
-  {
+
+  @media (min-width: 1600px) {
     gap: 70px;
   }
-  @media(min-width: 1920px)
-  {
+
+  @media (min-width: 1920px) {
     gap: 100px;
   }
 }
+
 .need-image-container {
   width: 300px;
+
   img {
     width: inherit;
   }
-  @media(min-width:768px)
-  {
+
+  @media (min-width: 768px) {
     width: 500px;
   }
+
   @media (min-width: 1024px) {
     width: 450px;
   }
+
   @media (min-width: 1440px) {
     width: 600px;
   }
+
   @media (min-width: 1600px) {
     width: 771px;
   }
 }
+
 .need-heading {
   @include section-heading;
-  @media(min-width:1920px)
-  {
+
+  @media (min-width: 1920px) {
     width: 80%;
   }
 }
-.need-heading-span {
-@media(min-width: 1920px)
-{
-    display: block;
-}
-}
 
+.need-heading-span {
+  color: #212528 !important;
+
+  @media (min-width: 1920px) {
+    display: block;
+  }
+}
 
 .need-card-text-container {
   gap: 15px;
-  
-  @media(min-width: 1024px)
-  {
+
+  @media (min-width: 1024px) {
     gap: 50px;
   }
-  @media(min-width: 1600px)
-  {
+
+  @media (min-width: 1600px) {
     gap: 60px;
   }
-  @media(min-width: 1920px)
-  {
-    gap: 70px;
 
+  @media (min-width: 1920px) {
+    gap: 70px;
   }
 }
+
 .need-text-container {
- gap: 15px;
+  gap: 15px;
 }
+
 .need-card-container {
   gap: 15px;
 }
+
 .need-card {
   gap: 15px;
   padding: 5px;
-  @media(min-width: 1024px)
-  {
+
+  @media (min-width: 1024px) {
     gap: 30px;
     padding: 5px 15px;
   }
-  @media(min-width: 1440px)
-  {
+
+  @media (min-width: 1440px) {
     gap: 40px;
     padding: 7px 20px;
   }
-  @media(min-width: 1600px)
-  {
+
+  @media (min-width: 1600px) {
     gap: 60px;
     padding: 10px 30px;
   }
-  @media(min-width: 1920px)
-  {
+
+  @media (min-width: 1920px) {
     gap: 65px;
     padding: 15px 40px;
   }
+
   &:hover {
     cursor: pointer;
-    box-shadow: 5px 10px 37px #021605;
+    box-shadow: 5px 10px 20px -15px #021605;
   }
 }
+
 .need-text-description {
-    font-size: 17px;
-    @media(min-width: 1440px)
-    {
-        width: 95%;
-    }
-    @media(min-width: 1920px)
-    {
-        width: 70%;
-    }
+  font-size: 17px;
+
+  @media (min-width: 1440px) {
+    width: 95%;
+  }
+
+  @media (min-width: 1920px) {
+    width: 70%;
+  }
 }
+
 .need-card-description {
+  @media (min-width: 1440px) {
+    width: 80%;
+  }
 
-    @media(min-width: 1440px)
-    {
+  @media (min-width: 1600px) {
+    width: 90%;
+  }
 
-        width: 80%;
-    }
-    @media(min-width: 1600px)
-    {
-
-        width: 90%;
-    }
-    @media(min-width: 1920px)
-    {
-
-        width: 75%;
-    }
+  @media (min-width: 1920px) {
+    width: 75%;
+  }
 }

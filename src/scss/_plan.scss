@@ -2,34 +2,44 @@
 
 .plan-section {
   background-color: #fafafa;
+
   @media (min-width: 1024px) {
     padding: 3px 0px;
   }
+
   @media (min-width: 1440px) {
     padding: 5px 0px;
   }
+
   @media (min-width: 1920px) {
     padding: 10px 0px;
   }
 }
+
 .plan-container {
   gap: 15px;
+
   @media (min-width: 768px) {
     gap: 20px;
   }
+
   @media (min-width: 1024px) {
     gap: 30px;
   }
+
   @media (min-width: 1440px) {
     gap: 40px;
   }
+
   @media (min-width: 1600px) {
     gap: 45px;
   }
+
   @media (min-width: 1920px) {
     gap: 50px;
   }
 }
+
 .plan-heading {
   @include section-heading;
 }
@@ -62,13 +72,11 @@
 
   &:hover {
     cursor: pointer;
-    // background: url(../images/design/card-hover.png);
     background-image: url(../images/design/card-hover.png);
     background-position: center;
     background-repeat: no-repeat;
     color: white;
     transform: scaleX(1);
-
 
     .card-title {
       color: white;
@@ -82,14 +90,25 @@
       background-color: #fad725;
       border: none;
     }
+
     transform: scaleY(1.05);
-    @media(min-width: 1920px)
-    {
-      transform: scaleY(1.1);
+
+    @media (min-width: 1920px) {
+      transform: scaleY(1.115);
     }
   }
+
+  @media (min-width: 768px) {
+    padding: 40px 30px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 50px 35px;
+  }
+
   @media (min-width: 1440px) {
     gap: 25px 40px;
+    padding: 60px 30px;
   }
 
   @media (min-width: 1600px) {
@@ -111,11 +130,12 @@
 }
 
 .plan-card-description {
-  font-size: 17px;
+  font-size: 16px;
   line-height: 30px;
 
   @media (min-width: 1440px) {
     line-height: 35px;
+    font-size: 17px;
   }
 }
 
@@ -125,4 +145,10 @@
   border: 2px solid #212528;
   margin: 15px;
   font-size: 14px;
+
+  &:hover {
+    background-color: #ffd500;
+    transition: all 0.3s ease-in-out;
+    color: $heading-color;
+  }
 }

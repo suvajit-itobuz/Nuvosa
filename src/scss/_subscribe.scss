@@ -1,170 +1,166 @@
-.subscribe-text-form-container{
-    background-color: #FAFAFA;
-    border-radius: 6px;
-    padding: 20px 7px;
-    border-color: #FAFAFA;
-    @media(min-width:768px)
-    {
-        border-radius: 10px;
-        padding: 20px 10px;
-    }
-    @media(min-width:1024px)
-    {
-           padding: 30px 80px;
-    }
-    @media(min-width:1440px)
-    {
-        
-    }
-    @media(min-width: 1600px)
-    {
-        
-        gap: 15px;
-    }
-    @media(min-width: 1920px)
-    {
-        border-radius: 16px;
-        gap: 21px;
-        padding: 78px 153px;
-        width: 77%;
-    }
+.subscribe-text-form-container {
+  background-color: #fafafa;
+  border-radius: 6px;
+  padding: 20px 7px;
+  border-color: #fafafa;
+
+  @media (min-width: 768px) {
+    border-radius: 10px;
+    padding: 20px 30px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 30px 80px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 40px 80px;
+  }
+
+  @media (min-width: 1600px) {
+    gap: 15px;
+    padding: 60px 140px;
+  }
+
+  @media (min-width: 1920px) {
+    border-radius: 16px;
+    gap: 21px;
+    padding: 82px 153px;
+    width: 75.5%;
+  }
 }
+
 .subscribe-text-heading {
-    font-size: 25px;
-    @media(min-width: 768px)
-    {
-        font-size: 30px;
-    }
-    @media(min-width: 1024px)
-    {
-        font-size: 35px;
-    }
-    @media(min-width:1440px)
-    {
-        font-size: 40px;
-    }
-    @media(min-width: 1600px)
-    {
-        font-size: 45px;
-    }
-    @media(min-width: 1920px)
-    {
-        font-size: 50px;
-    }
+  font-size: 25px;
+
+  @media (min-width: 768px) {
+    font-size: 30px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 35px;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 40px;
+  }
+
+  @media (min-width: 1600px) {
+    font-size: 45px;
+  }
+
+  @media (min-width: 1920px) {
+    font-size: 50px;
+  }
 }
 
 .subscribe-text-description {
-    color: #909090;
-    font-size: 16px;
+  color: #909090;
+  font-size: 16px;
 
-    @media(min-width: 768px) {
-        font-size: 18px;
-    }
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
 
-    @media(min-width: 1440px) {
-        font-size: 20px;
-    }
+  @media (min-width: 1440px) {
+    font-size: 20px;
+  }
 }
-.subscribe-form-input-container
-{
-    @media(min-width: 768px)
-    {
-        gap: 5px;
-    }
-    @media(min-width: 1024px)
-    {
-        gap: 15px;
-    }
-    @media(min-width: 1440px)
-    {
-        gap: 20px;
-        width: 80%;
-    }
-    @media(min-width: 1600px)
-    {
-        gap: 25px;
-    }
-    @media(min-width: 1920px)
-    {
-        gap: 30px;
-    }
-}
-.subscribe-form-container{
-    @media(min-width: 1440px)
-    {
 
-        width: 100%;
-    }
+.subscribe-form-input-container {
+  @media (min-width: 768px) {
+    gap: 10px;
+  }
 
-}
-.subscribe-form-input{
-    position: static;
+  @media (min-width: 1024px) {
+    gap: 15px;
+  }
 
-    @media(min-width: 1440px)
-    {
-    
-        width: 90%;
-    }
+  @media (min-width: 1440px) {
+    gap: 20px;
+    width: 80%;
+  }
+
+  @media (min-width: 1600px) {
+    gap: 25px;
+  }
+
+  @media (min-width: 1920px) {
+    gap: 30px;
+  }
 }
+
+.subscribe-form-container {
+  @media (min-width: 1440px) {
+    width: 100%;
+  }
+}
+
+.subscribe-form-input {
+  position: static;
+
+  @media (min-width: 1440px) {
+    width: 90%;
+  }
+}
+
 .subscribe-form-input input {
-    font-size: 17px;
-    border: 1px solid #C3C6D0;
-    border-radius: 4px;
-    @media(min-width: 768px)
-    {
-        border-radius: 6px;
-        font-size: 19px;
-    }
-    @media(min-width: 1440px)
-    {
-        padding: 10px 15px;
-    }
-    @media(min-width: 1600px)
-    {
-        padding: 15px 20px;
-    }
-    @media(min-width: 1920px)
-    {
-     padding: 23px 37px;
-    }
+  font-size: 17px;
+  border: 1px solid #c3c6d0;
+  border-radius: 4px;
+
+  @media (min-width: 768px) {
+    border-radius: 6px;
+    font-size: 19px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 10px 15px;
+  }
+
+  @media (min-width: 1600px) {
+    padding: 15px 20px;
+  }
+
+  @media (min-width: 1920px) {
+    padding: 23px 37px;
+  }
+  &::placeholder{
+    color: #727272;
+  }
 }
+
 .subscribe-button {
-    background-color: $blue-violet-color;
-    border: 1px solid #000000;
-    border-radius: 4px;
-    font-size: 16px;
-    margin: 15px;
-    @media(min-width: 768px)
-    {
-        border-radius: 6px;
-        font-size: 18px;
+  background-color: $blue-violet-color;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  margin: 15px;
 
-        margin: 5px;
-        // padding: 5px 8px;
-    }
-    @media(min-width: 1024px)
-    {
+  @media (min-width: 768px) {
+    border-radius: 6px;
+    font-size: 18px;
+    margin: 5px 10px;
+  }
 
+  @media (min-width: 1024px) {
+    margin: 0px 0px 0px 15px;
+    padding: 10px 15px;
+  }
 
-        margin:0px 0px 0px 15px;
-        padding: 10px 15px;
-    }
-    @media(min-width: 1440px)
-    {
+  @media (min-width: 1440px) {
+    margin: 0px 0px 0px 20px;
+    padding: 13px 17px;
+  }
 
-        margin:0px 0px 0px 20px;
-        padding: 13px 17px;
-    }
-    @media(min-width: 1600px)
-    {
-      font-size: 20.55px;
-        margin:0px 0px 0px 25px;
-        padding: 15px 18px;
-    }
-    @media(min-width: 1920px)
-    {
+  @media (min-width: 1600px) {
+    font-size: 20.55px;
+    margin: 0px 0px 0px 25px;
+    padding: 15px 18px;
+  }
 
-        margin:0px 0px 0px 30px;
-        padding: 21px 33px;
-    }
+  @media (min-width: 1920px) {
+    margin: 0px 0px 0px 30px;
+    padding: 21px 33px;
+  }
 }

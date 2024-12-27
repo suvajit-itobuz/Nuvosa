@@ -1,52 +1,71 @@
 @import "mixin";
 
 .client-text-heading {
-    @include section-heading;
-
+  @include section-heading;
 }
+
+.client-text-container {
+  @media (min-width: 768px) {
+    width: 72%;
+  }
+
+  @media (min-width: 1024px) {
+    width: 56%;
+  }
+
+  @media (min-width: 1440px) {
+    width: 38%;
+  }
+
+  @media (min-width: 1600px) {
+    width: 33%;
+  }
+}
+
 .client-text-description {
-    font-size: 17px;
+  font-size: 17px;
 }
-.client-card{
-    padding: 15px;
-    border-radius: 0px;
 
+.client-card {
+  padding: 15px;
+  border-radius: 0px;
 }
+
 .client-card-name {
-    color: $heading-color;
-    font-weight: 500;
-    font-size: 16px;
-}
-.client-card-role {
-    color: $description-color;
-    font-size: 16px;
-}
-.client-card-description {
-    font-size: 17px;
-    color: $description-color;
+  color: $heading-color;
+  font-weight: 500;
+  font-size: 16px;
 }
 
+.client-card-role {
+  color: $description-color;
+  font-size: 16px;
+}
+
+.client-card-description {
+  font-size: 17px;
+  color: $description-color;
+}
 
 .carousel-indicators {
-    position: static;
-    margin-top: 1rem;
+  position: static;
+  margin-top: 1rem;
 }
 
 .carousel-indicators [data-bs-target] {
-    background-color: #E9E9E9;
-    width: 7px;
-    height: 7px;
-    border-radius: 100%;
-    
-
+  background-color: #e9e9e9;
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
 }
-.carousel-button{
-    width: 14px;
-    border-radius: 50%;
+
+.carousel-button {
+  width: 14px;
+  border-radius: 50%;
 }
 
 .carousel-indicators .active {
-    background-color: #6F77F1;
-transform: scale(2);
-    transition: all 0.2s ease-in-out;
+  background-color: #6f77f1;
+  transform: scale(2);
+  transition: all 0.2s ease-in-out;
 }

@@ -1,72 +1,76 @@
-.number-text-heading{
-    margin: 0px;
+.number-text-heading {
+  margin: 0px;
 }
-.number-text-description{
-    margin: 0px;
+
+.number-text-description {
+  margin: 0px;
 }
 
 .number-text-image-container {
-    gap: 12px;
+  gap: 12px;
 }
-.number-card-container{
-    border-radius: 4px;
-    border: 2px solid #E1E1E1;
-    width: 100%;
-    gap: 15px;
-    padding: 25px 0px;
-    @media(min-width: 768px)
-    {
-        padding: 30px 15px;
-    }
-    @media(min-width: 1024px)
-    {
-        width: 80%;
-        padding: 20px 30px;;
-    }
-    @media(min-width: 1440px)
-    {
-        width: 65%;
-        padding: 25px 40px;
-    }
-    @media(min-width: 1600px)
-    {
-        width: 65%;
-        padding: 35px 55px;
-    }
-    @media(min-width: 1920px)
-    {
-        width: 64.5%;
-        padding: 42px 64px;
-    }
+
+.number-card-container {
+  border-radius: 4px;
+  border: 2px solid #e1e1e1;
+  width: 100%;
+  gap: 15px;
+  padding: 25px 0px;
+
+  @media (min-width: 768px) {
+    padding: 30px 15px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 80%;
+    padding: 20px 30px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 65%;
+    padding: 25px 40px;
+  }
+
+  @media (min-width: 1600px) {
+    width: 65%;
+    padding: 35px 55px;
+  }
+
+  @media (min-width: 1920px) {
+    width: 64.5%;
+    padding: 42px 64px;
+  }
 }
+
 .number-text-heading {
-    color: #666565;
-    font-size: 50px;
-    @media(min-width: 768px)
-    {
-        font-size: 55px;
-    }
-    @media(min-width: 1024px)
-    {
-        font-size: 60px;
-    }
-    @media(min-width: 1440px)
-    {
-        font-size: 65px;
-    }
-    @media(min-width: 1600px)
-    {
-        font-size: 70px;
-    }
-    @media(min-width: 1920px)
-    {
-        font-size: 73px;
-    }
+  color: #666565;
+  font-size: 50px;
+
+  @media (min-width: 768px) {
+    font-size: 55px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 60px;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 65px;
+  }
+
+  @media (min-width: 1600px) {
+    font-size: 70px;
+  }
+
+  @media (min-width: 1920px) {
+    font-size: 73px;
+  }
 }
-.number-text-description{
-    color: #6F6F6F;
-    @media(min-width: 768px)
-    {
-        font-size: 17px;
-    }
+
+.number-text-description {
+  color: #6f6f6f;
+
+  @media (min-width: 768px) {
+    font-size: 17px;
+  }
 }

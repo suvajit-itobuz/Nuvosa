@@ -1,18 +1,23 @@
 .grow-container {
   gap: 20px;
+
   @media (min-width: 1024px) {
     gap: 30px;
   }
+
   @media (min-width: 1440px) {
     gap: 50px;
   }
+
   @media (min-width: 1600px) {
     gap: 60px;
   }
+
   @media (min-width: 1920px) {
     gap: 70px;
   }
 }
+
 .grow-card-image {
   width: 70px;
 
@@ -32,39 +37,52 @@
     text-decoration: none;
     color: $blue-violet-color;
     font-size: 14px;
+
+    &:hover {
+      color: blue;
+    }
   }
+
   h5 {
     @media (min-width: 1440px) {
       font-size: 20px;
     }
+
     @media (min-width: 1600px) {
       font-size: 22px;
     }
   }
+
   p {
     @media (min-width: 1440px) {
       font-size: 17px;
     }
   }
+
   &:hover {
     box-shadow: 0px 25px 50px -40px #021605;
     cursor: pointer;
   }
+
   @media (min-width: 768px) {
     width: 45%;
   }
+
   @media (min-width: 1024px) {
     width: 31%;
     padding: 15px;
   }
+
   @media (min-width: 1440px) {
     width: 25%;
     padding: 20px;
     gap: 20px;
   }
+
   @media (min-width: 1600px) {
     width: 23%;
   }
+
   @media (min-width: 1920px) {
     width: 20.5%;
     padding: 30px;

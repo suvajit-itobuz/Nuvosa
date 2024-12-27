@@ -1,90 +1,95 @@
 @import "mixin";
+
 .speed-section {
-   @media(min-width: 768px)
-   {
+  @media (min-width: 768px) {
     padding: 0px 50px;
-   }
-   @media(min-width: 1024px)
-   {
+  }
+
+  @media (min-width: 1024px) {
     padding: 0px 10px;
-   }
-   @media(min-width: 1440px)
-   {
+  }
+
+  @media (min-width: 1440px) {
     padding: 0px 85px;
-   }
-   @media(min-width: 1600px)
-   {
+  }
+
+  @media (min-width: 1600px) {
     padding: 0px 25px;
-   }
-   @media(min-width: 1920px)
-   {
+  }
+
+  @media (min-width: 1920px) {
     padding: 0px 130px;
-   }
+  }
 }
+
 .speed-text-heading {
   @include section-heading;
-
 }
-.speed-image-container {
 
+.speed-image-container {
   width: 300px;
+
   img {
     width: inherit;
   }
-  @media(min-width: 768px)
-  {
+
+  @media (min-width: 768px) {
     width: 500px;
   }
-  @media(min-width: 1440px)
-  {
+
+  @media (min-width: 1440px) {
     width: 650px;
   }
-  @media(min-width: 1600px)
-  {
+
+  @media (min-width: 1600px) {
     width: 680px;
   }
 
-  @media(min-width: 1920px)
-  {
+  @media (min-width: 1920px) {
     width: 794px;
   }
 }
+
 .speed-form-container {
   input {
     background-color: #f2f2f2;
     border: none;
     border-radius: 0px;
-    @media(min-width: 1920px)
-    {
+
+    @media (min-width: 1920px) {
       padding: 11px 22px;
     }
-    
   }
+
   input::placeholder {
-    color: #B6B6B6;
+    color: #b6b6b6;
     font-size: 17px;
   }
 }
+
 .speed-form {
   gap: 15px;
 }
+
 .speed-form-web-input {
   input {
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
-    border-right: 2px solid #DFDFDF;
-}
-line-height: 0rem;
+    border-right: 2px solid #dfdfdf;
+  }
 
+  line-height: 0rem;
 }
+
 .speed-form-email-input {
   input {
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
-    
+  }
+
+  line-height: 0rem;
 }
-line-height: 0rem;
-}
+
 .speed-button {
   @include yellow-button(7px, 15px);
   border-radius: 2.58px;
@@ -92,7 +97,7 @@ line-height: 0rem;
 
   @media (min-width: 1024px) {
     @include yellow-button(5px, 10px);
-    font-size: 16px  !important;
+    font-size: 16px !important;
   }
 
   @media (min-width: 1440px) {
@@ -103,13 +108,13 @@ line-height: 0rem;
     @include yellow-button(14px, 28px);
   }
 }
+
 .speed-text-description {
   @media (min-width: 1024px) {
     font-size: 17px;
   }
-  @media(min-width: 1600px)
-  {
+
+  @media (min-width: 1600px) {
     width: 85%;
   }
-
 }

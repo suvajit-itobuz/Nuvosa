@@ -1,104 +1,107 @@
 @import "mixin";
 
 .member-text-heading {
-    @include section-heading;
+  @include section-heading;
 }
 
 .member-container {
-    @media (min-width: 1920px) {
-        gap: 60px;
-    }
+  @media (min-width: 1920px) {
+    gap: 60px;
+  }
 }
 
 .member-card-container {
-    gap: 15px;
+  gap: 15px;
 
-    @media (min-width: 1024px) {
-        gap: 20px;
-    }
+  @media (min-width: 1024px) {
+    gap: 20px;
+  }
 
-    @media (min-width: 1440px) {
-        gap: 25px;
-    }
+  @media (min-width: 1440px) {
+    gap: 25px;
+  }
 
-    @media (min-width: 1600px) {
-        gap: 32px;
-    }
+  @media (min-width: 1600px) {
+    gap: 32px;
+  }
 }
 
 .member-card {
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    gap: 20px;
-    padding: 20px 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  gap: 20px;
+  padding: 20px 10px;
+  border-radius: 0px;
+  outline: 1px solid #efefef;
+  border: none;
 
-    @media (min-width: 768px) {
-        width: 40%;
-        padding: 20px;
-    }
-    @media (min-width: 1440px) {
-        padding: 25px 35px;
-    }
+  @media (min-width: 768px) {
+    width: 40%;
+    padding: 20px;
+  }
 
-    @media (min-width: 1920px) {
-        padding:41px 51px;
-    }
+  @media (min-width: 1440px) {
+    padding: 25px 35px;
+  }
 
-    &:hover {
-        box-shadow: 0px 24px 50px -40px #021605;
+  @media (min-width: 1920px) {
+    padding: 41px 51px;
+  }
 
-        color: #6F77F1;
-    }
+  &:hover {
+    box-shadow: 0px 24px 50px -40px #021605;
+    outline: none;
+    color: #6f77f1;
+  }
 
-    a>img:hover {
-        fill: $blue-violet-color;
-    }
-    .card-link{
-        text-decoration: none;
-    }
+  a > img:hover {
+    fill: $blue-violet-color;
+  }
 
-
+  .card-link {
+    text-decoration: none;
+  }
 }
 
 .member-card-image {
-    width: 100px;
+  width: 100px;
 
-    @media (min-width: 1024px) {
-        width: 120px;
-    }
+  @media (min-width: 1024px) {
+    width: 120px;
+  }
 
-    @media (min-width: 1440px) {
-        width: 131px;
-    }
+  @media (min-width: 1440px) {
+    width: 131px;
+  }
 
-    img {
-        width: inherit;
-    }
+  img {
+    width: inherit;
+  }
 }
 
 .member-card-body {
-    padding: 0px;
+  padding: 0px;
 
-    p {
-        font-size: 17px;
-    }
-    
+  p {
+    font-size: 17px;
+  }
 }
+
 .member-card-body svg {
-    fill:#828282;
+  fill: #828282;
 }
-.member-card-body svg:hover {
-    
-    transform: scale(1.2);
-    fill: #6F77F1; 
-    
-}
-.member-text-description {
-    @media (min-width: 768px) {
-        width: 80%;
-    }
 
-    @media (min-width: 1440px) {
-        width: 61%;
-    }
+.member-card-body svg:hover {
+  transform: scale(1.2);
+  fill: #6f77f1;
+}
+
+.member-text-description {
+  @media (min-width: 768px) {
+    width: 80%;
+  }
+
+  @media (min-width: 1440px) {
+    width: 61%;
+  }
 }

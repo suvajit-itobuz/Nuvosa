@@ -11,7 +11,7 @@ body {
 
 $heading-color: #212528;
 $description-color: #828282;
-$blue-violet-color:#6F77F1;
+$blue-violet-color: #6f77f1;
 
 @import "mixin";
 @import "./_nav";
@@ -28,19 +28,22 @@ $blue-violet-color:#6F77F1;
 @import "./number";
 @import "./client";
 @import "./subscribe";
-.section-wrapper {
-  @media(min-width: 1600px)
-  {
+@import "./footer";
 
+.section-wrapper {
+  @media (min-width: 1600px) {
     margin: 130px 0px;
   }
 }
+
 .title-color {
   color: $heading-color;
 }
+
 .description-color {
   color: #828282;
 }
+
 .purple-color {
   color: $blue-violet-color;
 }
